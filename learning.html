@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 100px;
+            height: 100px;
+            background: black;
+        }
+
+        .vivek {
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="x"></div>
+    <button id="btn1">Click me!</button>
+
+    <script>
+        let count = 0;
+        let newBtn = document.querySelector("#btn1");
+        newBtn.addEventListener("click", () => {
+            count++;
+            console.log("Count:", count);
+
+            let x;
+            if (count % 2 === 0) {
+                x = 'container';
+            } else {
+                x = 'vivek';
+            }
+            document.querySelector('.x').classList.remove('container', 'vivek');
+            // Add the class determined by the condition
+            document.querySelector('.x').classList.add(x);
+        });
+    </script>
+</body>
+
+</html>
