@@ -1,22 +1,24 @@
-//call back
+//  1- call back 
 
-// function getData(dataId, getNextData){
-//     setTimeout(()=>{
-//         console.log("hello brother", dataId);
-//         if(getNextData){
-//             getNextData();
-//         }
+function getData(dataId, getNextData){
+    setTimeout(()=>{
+        console.log("hello brother", dataId);
+        if(getNextData){
+            getNextData();
+        }
 
-// },2000)
-// }
-// getData(1,()=>{
-//     getData(2, () => {
-//         getData(3, () => {
-// getData(4);
-//         })
+},2000)
+}
+getData(1,()=>{
+    getData(2, () => {
+        getData(3, () => {
+getData(4);
+        })
 
-//     });
-// });
+    });
+});
+
+//console.log("vidhi");
 
 //promise
 
@@ -33,7 +35,11 @@
 //             resolve("sucess");
 //             if (getNextData) {
 //                 getNextData();
+                
 //             }
+
+            
+
 
 //         }, 8000)
 //     })
@@ -98,6 +104,6 @@
 // })
 
 
-function hello(){
-    console.log("hello ")
-}
+// function hello(){
+//     console.log("hello ")
+// }
