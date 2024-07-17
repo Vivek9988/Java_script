@@ -44,6 +44,13 @@ let newBtn2 = document.querySelector("#btn2");
 
 
 
+//let vivek = document.getElementsByTagName("div");
+//console.log(vivek);
+
+// let hhh= vivek.getAttribute("class");  // attribute always work with the attribute name , it cannot be black
+// console.log(hhh);
+
+
 
 
 

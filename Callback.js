@@ -1,22 +1,24 @@
 //  1- call back 
 
-function getData(dataId, getNextData){
-    setTimeout(()=>{
-        console.log("hello brother", dataId);
-        if(getNextData){
-            getNextData();
-        }
+// function getData(dataId, getNextData){
+//     setTimeout(()=>{
+//         console.log("hello brother", dataId);
+//         if(getNextData){
+//             getNextData();
+//         }
 
-},2000)
-}
-getData(1,()=>{
-    getData(2, () => {
-        getData(3, () => {
-getData(4);
-        })
+// },2000)
+// }
+// getData(1,()=>{
+//     getData(2, () => {
+//         getData(3, () => {
+// getData(4,()=>{
+//     getData(5  )
+// });
+//         })
 
-    });
-});
+//     });
+// });
 
 //console.log("vidhi");
 
@@ -37,10 +39,6 @@ getData(4);
 //                 getNextData();
                 
 //             }
-
-            
-
-
 //         }, 8000)
 //     })
 // }
@@ -107,3 +105,10 @@ getData(4);
 // function hello(){
 //     console.log("hello ")
 // }
+
+
+ // 3 async await
+
+ 
+
+

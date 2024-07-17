@@ -56,8 +56,10 @@ arr.forEach((vall)=>{//for each loop
 });
 //for of loop
 
-for(let l of arr){  
-   console.log(l);
+for(let i of arr){  
+   console.log(i);
 }
+
+
 
 
